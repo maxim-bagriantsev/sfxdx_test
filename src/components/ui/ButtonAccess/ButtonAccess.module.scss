@@ -2,22 +2,29 @@
 
 // basic
 .button {
-  color: $white;
+  background-color: $white;
+  color: $textGreen;
   cursor: pointer;
   display: flex;
   align-items: center;
-  -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   border: none;
   justify-content: center;
-  border-radius: 8px;
-  padding: 12px 32px;
-  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 700;
-  line-height: 24px;
-  background-color: $textGreen;
+
+  @media screen and (max-width: 834px) {
+    font-size: 12px;
+    padding: 10px 13px;
+  }
+
+  // color settings
 
 
   //  size settings
@@ -30,14 +37,6 @@
   &_sm {
     font-size: 14px;
     font-weight: 400;
-  }
-
-  &_medium {
-    border-radius: 8px;
-    padding: 12px 32px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
   }
 
   &_large {
@@ -74,6 +73,12 @@
   align-items: center;
 }
 
-.prefixIcon{
-  margin-left: 22px;
+.label {
+  width: max-content;
+}
+
+.prefixIcon {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
 }

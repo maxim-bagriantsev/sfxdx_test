@@ -15,11 +15,34 @@
   backdrop-filter: blur(8px);
   justify-content: space-between;
 
-  &__logo {
-    cursor: pointer;
+  @media screen and (max-width: 834px) {
+    height: 68px;
+    padding: 0 20px;
+    border-bottom: none;
   }
 
-  &__menu {
+  &__logo {
+    cursor: pointer;
+
+    svg {
+
+
+      @media screen and (max-width: 834px) {
+        width: 70%;
+      }
+    }
+
+  }
+
+  &__left {
+    width: 200px;
+
+    @media screen and (max-width: 834px) {
+      display: none;
+    }
+  }
+
+  &__right {
     width: 200px;
   }
 }

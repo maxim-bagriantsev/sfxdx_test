@@ -3,7 +3,6 @@
 html {
   font-family: 'SFProDisplay', sans-serif;
   font-size: 14px;
-  color: $headText;
 }
 
 *,
@@ -17,7 +16,6 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-
 }
 
 body,
@@ -85,7 +83,7 @@ select {
 
 .long-string {
   display: inline-block;
-  max-width: 200px!important;
+  max-width: 200px !important;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -93,100 +91,10 @@ select {
 
 .short-string {
   display: inline-block;
-  max-width: 100px!important;
+  max-width: 100px !important;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-// custom scroll bar
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: $scrollBg;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: $scroll;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $scrollHover;
-}
-
-// Details pages
-.details {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px $horizontalPadding 48px;
-  }
-
-  &__body {
-    display: flex;
-    flex-direction: column;
-    padding: 0 $horizontalPadding;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-
-      .detail {
-        display: flex;
-        flex-direction: column;
-        width: 33%;
-        padding-right: 30px;
-        margin-bottom: 33px;
-
-        &_full {
-          width: 100%!important;
-        }
-
-        &__content {
-          &-title {
-            margin-bottom: 16px;
-          }
-        }
-      }
-    }
-  }
-
-  &__divider {
-    width: 100%;
-    height: 1px;
-    background-color: $gray5;
-    margin: 8px 0 40px;
-  }
-}
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: $gray5;
-  margin: 8px 0 40px;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}

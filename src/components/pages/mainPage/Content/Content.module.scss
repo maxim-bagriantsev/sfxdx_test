@@ -1,3 +1,7 @@
 .content {
-  height: 946px;
+  height: 950px;
+
+  @media screen and (max-width: 834px) {
+    padding: 0 20px;
+  }
 }

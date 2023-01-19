@@ -6,11 +6,13 @@
   flex-direction: column;
   margin-top: auto;
   background-color: $background;
-  height: 221px;
   //position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  border-top: 1px solid $gray1;
+  height: 100%;
+
 
   &__info {
     display: flex;
@@ -18,11 +20,21 @@
     justify-content: space-between;
     padding: 50px 76px 40px 70px;
 
+    @media screen and (max-width: 834px) {
+      margin: 0 auto;
+      padding: 50px 45px 40px 45px;
+    }
+
 
     .content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+
+      @media screen and (max-width: 834px) {
+        flex-direction: column;
+      }
 
       &__info {
         width: 190px;
@@ -30,9 +42,16 @@
         font-size: 16px;
         line-height: 16px;
 
+        @media screen and (max-width: 834px) {
+          justify-content: center;
+          text-align: center;
+          margin-top: 85px;
+        }
+
         &_item {
           margin-bottom: 15px;
-          color: #676767;
+          color: $gray3;
+          cursor: pointer;
         }
       }
 
@@ -40,12 +59,24 @@
         display: flex;
         cursor: pointer;
         padding-bottom: 50px;
+
+
+        @media screen and (max-width: 834px) {
+          position: absolute;
+          top: 0;
+          padding-bottom: 0;
+        }
       }
 
       &__social {
         width: 190px;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 834px) {
+
+          margin-top: 20px;
+        }
 
         &_item {
           margin-right: 34px;
@@ -59,6 +90,12 @@
     display: flex;
     justify-content: center;
     margin-top: 29px;
-    color: #959596;
+    font-weight: 500;
+    color: $gray2;
+
+    @media screen and (max-width: 834px) {
+      text-align: center;
+      width: max-content;
+    }
   }
 }

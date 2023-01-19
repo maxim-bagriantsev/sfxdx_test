@@ -8,6 +8,10 @@
 
 .children {
   position: relative;
-  margin-top: $headerHeight;
-  margin-bottom: 20px;
+  margin-top: 100px;
+
+
+  @media screen and (max-width: 834px) {
+    margin-top: 68px;
+  }
 }

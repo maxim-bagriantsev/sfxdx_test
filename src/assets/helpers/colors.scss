@@ -1,124 +1,13 @@
 //  Color scheme
+
+// text
+$textGreen: #08D899;
+
+
+// background
 $background: #F0F5F5;
 $gray1: #CDD2DD;
+$gray2: #959596;
+$gray3: #676767;
 $white: #ffffff;
-
-
-
-
-
-
-
-
-$whiteGray: #f2f4f7;
-$halfGray: #f5faff;
-$grayWhite: #e7e9eb;
-$gray2: #e9eaea;
-$gray5: #d0d7dd;
-$gray7: #d1d5df;
-$gray8: #f4f4f4;
-$gray13: #f8f9fa;
-$gray12: #e0e1e9;
-$gray9: #cbcdd0;
-$gray10: #E1E5EA;
-$gray11: #1F1F22;
-$shadowGray: #d5d5d6;
-$shadowGray2: rgba(25, 27, 35, 0.15);
-$gray3: #c4c4c4;
-$lightGray: #aab1ba;
-$gray4: #878b90;
-$gray6: #7d838a;
-$gray14: #F6F6F6;
-$grayAsphalt: #344045;
-$gray: #808185;
-$textGray: #000000;
-$black1: #0b1f33;
-$black2: #333F48;
-
-$black: #000000;
-
-$lightGreen: #a4eedc;
-$green3: #5dc8ba;
-$green: #21ba72;
-$green0: #30BA9A;
-$green4: #62BDCA;
-$darkGreen: #209f6d;
-$green2: #21a19a;
-$prGreen: #00809C;
-$lightBlue: #d8ebfe;
-$blue: #1358bf;
-$red: #ee505a;
-$red1: #EC1B28;
-$beige: rgba(255, 205, 156, 0.6);
-
-// gradients
-$defaultGradient: linear-gradient(
-                56.46deg,
-                #a4eedc -45.58%,
-                #5bcab5 19.1%,
-                #6baae4 100%
-);
-$gradientLight: linear-gradient(56.46deg, #A4EEDC -45.58%, #5BCAB5 19.1%, #6BAAE4 100%);
-$gradient2: linear-gradient(
-                270deg,
-                rgba(224, 241, 254, 0.4) 0%,
-                rgba(212, 248, 239, 0.4) 49.63%,
-                rgba(199, 247, 233, 0.4) 100%
-);
-$gradient3: linear-gradient(225deg, #eef181 0%, #92dd90 51.47%, #4de9cb 100%);
-$gradient4: linear-gradient(
-                270deg,
-                rgba(224, 241, 254, 0.3) 0%,
-                rgba(212, 248, 239, 0.3) 49.63%,
-                rgba(199, 247, 233, 0.3) 100%
-);
-$gradient5: linear-gradient(270deg, #e0f1fe 0%, #d4f8ef 49.63%, #c7f7e9 50%);
-$gradient6: linear-gradient(270deg, #E0F1FE 0%, #D4F8EF 49.63%, #C7F7E9 100%);
-$boxShadowModal: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-$gradientDanger: linear-gradient(94.6deg, #FEA4A4 0.09%, #EE6767 100.09%);
-$mainPageBackground: linear-gradient(180deg, rgba(255, 255, 255, 0) 61.86%, rgba(255, 255, 255, 0.8) 100%), radial-gradient(10.51% 41.68% at 32.4% 13.32%, rgba(33, 186, 114, 0.36) 0%, rgba(33, 186, 114, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-, radial-gradient(33.57% 117.61% at 63.33% -9.67%, rgba(90, 177, 255, 0.24) 0%, rgba(0, 135, 205, 0.24) 0.01%, rgba(0, 135, 205, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-, radial-gradient(19.56% 68.52% at -4.53% 77.65%, rgba(255, 224, 102, 0.3) 0%, rgba(255, 224, 102, 0) 100%), linear-gradient(90deg, rgba(66, 227, 180, 0.34) 0%, rgba(107, 234, 199, 0.34) 49.98%, rgba(155, 208, 254, 0.34) 100%), #FFFFFF;
-//  color vars
-$borderOpacityColor: rgba(214, 214, 215, 0.5);
-$boxShadowColor: rgba(0, 0, 0, 0.08);
-$footerColor: #f8fefc;
-$nonActiveText: $gray9;
-
-//button
-$primary: #08D899;
-$boxShadowColor: 0px 8px 16px rgba(8, 216, 153, 0.2);
-$main: $white;
-$scrollBg: $halfGray;
-$scroll: $gray7;
-$scrollHover: $shadowGray;
-$editorMenuHover: $halfGray;
-$border: $gray5;
-
-$mainText: $black;
-$headText: $textGray;
-$smallText: $gray6;
-$tableSmallText: $gray4;
-$blockTitle: $black1;
-$calendarGradient: $gradient5;
-$chartActiveBg: $gradient3;
-$nonActiveElement: $gray8;
-
-$secondaryColor: $lightGray;
-$borderColor: $grayWhite;
-$tooltipBorder: $gray12;
-$tooltipShadow: $shadowGray2;
-$danger: $red;
-$serviceDanger: $red1;
-$mainBtnDanger: $gradientDanger;
-$action: $prGreen;
-$bgAction: lighten($lightGreen, 15%);
-$inputBorderColor: $shadowGray;
-$selectBorderColor: $gray10;
-$documentButton: $gray2;
-$tagBackground: $whiteGray;
-$cardShadow: $boxShadowModal;
-$textSelected: $lightBlue;
-$menuHover: $gradient5;
-$blockBg: $gray13;
-$toggleBg: $gradientLight;
+$backgroundButton: $textGreen;

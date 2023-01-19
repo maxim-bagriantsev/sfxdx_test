@@ -17,10 +17,7 @@ import Sky from 'react-sky';
 
 const cx = classNames.bind(styles);
 
-
-
 const ModuleSky = () => {
-
 
     return (
         <div className={cx('moduleSky')}>
