@@ -1,0 +1,192 @@
+@import './helpers/index.scss';
+
+html {
+  font-family: 'SFProDisplay', sans-serif;
+  font-size: 14px;
+  color: $headText;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.display-none {
+  display: none;
+}
+
+.container {
+  padding: 0 $horizontalPadding;
+  margin-top: 24px;
+}
+
+.local-container {
+  width: 100%;
+  padding: 32px $horizontalPadding;
+}
+
+.outer-container {
+  width: 100%;
+  padding: 32px $horizontalPadding;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pagination {
+  margin-top: 48px;
+}
+
+.long-string {
+  display: inline-block;
+  max-width: 200px!important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.short-string {
+  display: inline-block;
+  max-width: 100px!important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// custom scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $scrollBg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: $scroll;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollHover;
+}
+
+// Details pages
+.details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px $horizontalPadding 48px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 $horizontalPadding;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .detail {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        padding-right: 30px;
+        margin-bottom: 33px;
+
+        &_full {
+          width: 100%!important;
+        }
+
+        &__content {
+          &-title {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: $gray5;
+    margin: 8px 0 40px;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $gray5;
+  margin: 8px 0 40px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

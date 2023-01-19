@@ -1,0 +1,31 @@
+// grid
+.grid-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+// paddings, margins
+.vm-20 {
+  margin: 20px 0;
+}
+
+// elements
+.divider-0 {
+  width: 100%;
+  height: 1px;
+  background-color: $gray5;
+}
+
+// helpers
+.rel {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center!important;
+}

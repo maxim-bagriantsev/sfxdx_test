@@ -1,0 +1,8 @@
+@import '../../../assets/helpers/index';
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  font-family: 'SFProDisplay';
+  background-color: $white;
+}
