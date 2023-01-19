@@ -16,9 +16,9 @@ export const Footer = () => {
             <div className={styles.footer__info}>
                 <div className={styles.content}>
                     <div className={styles.content__info}>
-                        <div>Private Policy</div>
-                        <div>Term & Conditions</div>
-                        <div>Cookie Policy</div>
+                        <div className={styles.content__info_item}>Private Policy</div>
+                        <div className={styles.content__info_item}>Term & Conditions</div>
+                        <div className={styles.content__info_item}>Cookie Policy</div>
                     </div>
                     <div className={styles.content__logo}>
                         <IconLogo/>

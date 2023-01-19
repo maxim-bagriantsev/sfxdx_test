@@ -7,7 +7,7 @@
   margin-top: auto;
   background-color: $background;
   height: 221px;
-  position: fixed;
+  //position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -26,16 +26,26 @@
 
       &__info {
         width: 190px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+
+        &_item {
+          margin-bottom: 15px;
+          color: #676767;
+        }
       }
 
       &__logo {
+        display: flex;
         cursor: pointer;
+        padding-bottom: 50px;
       }
 
       &__social {
         width: 190px;
         display: flex;
-
+        align-items: center;
 
         &_item {
           margin-right: 34px;
@@ -46,6 +56,9 @@
   }
 
   &__bottom {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    color: #959596;
   }
 }
