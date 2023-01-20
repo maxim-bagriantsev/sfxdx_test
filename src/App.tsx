@@ -9,8 +9,6 @@ import './assets/global.scss';
 
 function App() {
     const dispatch = useAppDispatch()
-    const {users, isLoading, error} = useAppSelector(state => state.UserReducer)
-    const {removeUser} = useAppSelector(state => state.RemoveUserSlice)
 
     function getLibrary(provider: any): Web3Provider {
         const library = new Web3Provider(provider)

@@ -6,13 +6,11 @@
   flex-direction: column;
   margin-top: auto;
   background-color: $background;
-  //position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   border-top: 1px solid $gray1;
   height: 100%;
-
 
   &__info {
     display: flex;
@@ -24,7 +22,6 @@
       margin: 0 auto;
       padding: 50px 45px 40px 45px;
     }
-
 
     .content {
       display: flex;
@@ -74,7 +71,6 @@
         align-items: center;
 
         @media screen and (max-width: 834px) {
-
           margin-top: 20px;
         }
 

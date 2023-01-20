@@ -1,13 +1,8 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import CountReducer from './reducers/CountSlice'
-import UserReducer from './reducers/UserSlice'
-import RemoveUserSlice from "./reducers/RemoveUserSlice";
+
 import {postAPI} from "../serveces/PostService";
 
 const rootReducer = combineReducers({
-    CountReducer,
-    UserReducer,
-    RemoveUserSlice,
     [postAPI.reducerPath]: postAPI.reducer
 })
 

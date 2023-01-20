@@ -7,9 +7,10 @@ import {IconSocialsTwitter} from "../../ui/Icons/Socials/IconSocialsTwitter";
 import {IconSocialsYoutube} from "../../ui/Icons/Socials/IconSocialsYoutube";
 import {IconSocialsInstagram} from "../../ui/Icons/Socials/IconSocialsInstagram";
 
-export const Footer = () => {
-    const navigate = useNavigate();
+type FooterProps = {}
 
+export const Footer = (props: FooterProps) => {
+    const navigate = useNavigate();
 
     return (
         <div className={styles.footer}>
@@ -23,7 +24,6 @@ export const Footer = () => {
                     <div className={styles.content__logo}>
                         <IconLogo/>
                     </div>
-
                     <div className={styles.content__social}>
                         <a className={styles.content__social_item} href={'https://www.facebook.com/'}
                            target={'_blank'}><IconSocialsFacebook/></a>
@@ -35,13 +35,10 @@ export const Footer = () => {
                            target={'_blank'}><IconSocialsInstagram/></a>
                     </div>
                 </div>
-
                 <div className={styles.footer__bottom}>
                     ©2022 All rights reserved. Powered by Atla
                 </div>
             </div>
-
-
         </div>
     );
 };
