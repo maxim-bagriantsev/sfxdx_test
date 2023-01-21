@@ -11,8 +11,6 @@ import {IndexPage} from "./pages/index/IndexPage";
 
 
 function App() {
-    const dispatch = useAppDispatch()
-
     function getLibrary(provider: any): Web3Provider {
         const library = new Web3Provider(provider)
         library.pollingInterval = 12000

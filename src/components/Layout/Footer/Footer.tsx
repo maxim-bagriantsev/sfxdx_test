@@ -1,5 +1,4 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
 import styles from './Footer.module.scss';
 
 //ui
@@ -12,7 +11,6 @@ import {IconSocialsInstagram} from "../../ui/Icons/Socials/IconSocialsInstagram"
 type FooterProps = {}
 
 export const Footer = (props: FooterProps) => {
-    const navigate = useNavigate();
 
     return (
         <div className={styles.footer}>
@@ -28,13 +26,13 @@ export const Footer = (props: FooterProps) => {
                     </div>
                     <div className={styles.content__social}>
                         <a className={styles.content__social_item} href={'https://www.facebook.com/'}
-                           target={'_blank'}><IconSocialsFacebook/></a>
+                           target={'_blank'} rel="noreferrer"><IconSocialsFacebook/></a>
                         <a className={styles.content__social_item} href={'https://www.twitter.com/'}
-                           target={'_blank'}><IconSocialsTwitter/></a>
+                           target={'_blank'} rel="noreferrer"><IconSocialsTwitter/></a>
                         <a className={styles.content__social_item} href={'https://www.youtube.com/'}
-                           target={'_blank'}><IconSocialsYoutube/></a>
+                           target={'_blank'} rel="noreferrer"><IconSocialsYoutube/></a>
                         <a className={styles.content__social_item} href={'https://www.instagram.com/'}
-                           target={'_blank'}><IconSocialsInstagram/></a>
+                           target={'_blank'} rel="noreferrer"><IconSocialsInstagram/></a>
                     </div>
                 </div>
                 <div className={styles.footer__bottom}>
