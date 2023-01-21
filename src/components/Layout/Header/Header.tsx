@@ -28,7 +28,7 @@ export const injectedConnector = new InjectedConnector({
 export const Header = () => {
     const navigate = useNavigate();
 
-    const {chainId, account, activate, active} = useWeb3React<Web3Provider>()
+    const { account, activate, active} = useWeb3React<Web3Provider>()
 
     const onClick = () => {
         activate(injectedConnector)
