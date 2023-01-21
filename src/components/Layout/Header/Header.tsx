@@ -2,15 +2,15 @@ import {useNavigate} from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import {frontendRoutes} from '../../../utils/router/routes';
+import {InjectedConnector} from "@web3-react/injected-connector";
+import {useWeb3React} from "@web3-react/core";
+import {Web3Provider} from "@ethersproject/providers";
 
 //  ui
 import {IconLogo} from '../../ui/Icons/IconLogo'
 import {IconFox} from '../../ui/Icons/Header/IconFox'
 import {IconBug} from '../../ui/Icons/Header/IconBug'
 import {Button} from "../../ui/Button";
-import {InjectedConnector} from "@web3-react/injected-connector";
-import {useWeb3React} from "@web3-react/core";
-import {Web3Provider} from "@ethersproject/providers";
 import {ButtonAccess} from "../../ui/ButtonAccess";
 
 const cx = classNames.bind(styles);

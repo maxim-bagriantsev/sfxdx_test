@@ -1,6 +1,8 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import styles from './Footer.module.scss';
+
+//ui
 import {IconLogo} from "../../ui/Icons/IconLogo";
 import {IconSocialsFacebook} from "../../ui/Icons/Socials/IconSocialsFacebook";
 import {IconSocialsTwitter} from "../../ui/Icons/Socials/IconSocialsTwitter";

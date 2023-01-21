@@ -47,6 +47,5 @@ export const Content = () => {
                 </Box>
             </div>
         </div>
-    )
-        ;
+    );
 };
