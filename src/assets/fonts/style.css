@@ -1,31 +1,17 @@
 @font-face {
-  font-family: 'SBSansText';
+  font-family: 'ManropeBold';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-display: swap;
-  src: url('SBSansText.ttf') format('woff');
+  src: url('Manrope-Bold.ttf') format('woff');
 }
 
 @font-face {
-  font-family: 'SFProDisplay';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('SFProDisplay-Regular.ttf') format('woff');
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('SFProDisplay-Bold.ttf') format('woff');
-}
-
-@font-face {
-  font-family: 'SFProDisplay';
+  font-family: "GilroyMedium";
+  url("Gilroy-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-  src: url('SFProDisplay-Medium.ttf') format('woff');
 }
+
+
+

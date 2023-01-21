@@ -1,19 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom/client";
 import App from './App';
 import {Provider} from "react-redux";
 import {setupStore} from "./store/store";
-import { StyledEngineProvider } from '@mui/material/styles';
+import {StyledEngineProvider} from '@mui/material/styles';
 
 const store = setupStore()
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
-ReactDOM.render(
-    <Provider store={store}>
-        <StyledEngineProvider>
-            <App/>
-        </StyledEngineProvider>
-    </Provider>,
-
-    document.getElementById('root')
+root.render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <StyledEngineProvider>
+                <App/>
+            </StyledEngineProvider>
+        </Provider>,
+    </React.StrictMode>
 );
 
