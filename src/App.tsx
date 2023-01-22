@@ -1,5 +1,4 @@
 import React from 'react';
-import {useAppDispatch} from "./hooks/redux";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {frontendRoutes} from "./utils/router/routes";
 import {Web3ReactProvider} from '@web3-react/core';
